@@ -1,0 +1,57 @@
+.slick-slider {
+  width: 100%;
+}
+.slick-slide div {
+  outline: none;
+}
+.slider--item {
+  width: 100%;
+  height: 100%;
+  height: 550px;
+}
+.slider--item img {
+  object-fit: contain !important;
+  width: 100%;
+  height: 100%;
+}
+.slick-dots {
+  width: max-content !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.slick-dots li {
+  list-style: none;
+  margin: 15px 0 !important;
+  background-color: white;
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+}
+.slick-dots button {
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  border: none;
+  text-indent: -9999px;
+  outline: 0;
+}
+.slick-dots button::before {
+  content: "";
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  background-color: var(--main-color) !important;
+}
+li[class="slick-active"],
+li[class="slick-active"] button::before {
+  height: 100px !important;
+  width: 10px !important;
+  border-radius: 9999px;
+  transition: 0.6s;
+}
