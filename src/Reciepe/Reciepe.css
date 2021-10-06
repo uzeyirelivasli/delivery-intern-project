@@ -1,4 +1,110 @@
-.reciepe{
-    width: 80%;
-    margin: 0 auto;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.reciepe {
+  width: 80%;
+  margin: 0 auto;
+}
+.calculator {
+  margin: 50px 0;
+}
+.calculator * {
+  color: #250633 !important;
+}
+.row {
+  display: flex;
+}
+.calculator option {
+  color: white;
+  margin: 10px 0 !important;
+}
+.calculator > .row:first-child > div:first-child {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+.calculator > .row {
+  display: flex;
+  margin: 40px 0;
+}
+.calculator > .row > div {
+  flex: 1;
+  flex-direction: column;
+  border-bottom: 1px solid #250633;
+  padding: 5px;
+  margin-right: 15px;
+}
+.reciepe__description--text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.calculator select,
+.calculator input {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+.half--select {
+  display: flex;
+  justify-content: space-between;
+}
+.select--big {
+  width: 100%;
+}
+.result--container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 30px auto;
+  justify-content: space-between;
+}
+.calculate--button{
+    width: max-content;
+    position: relative;
+    overflow: hidden;
+}
+
+#calculate--button {
+  
+  padding: 16px 32px 13px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid var(--second-color);
+  color: var(--second-color);
+  font-size: 16px;
+  font-weight: 700;
+  transition: color 300ms ease, transform 300ms ease;
+}
+#calculate--button:hover,
+#calculate--button:focus {
+  color: #fff;
+  cursor: pointer;
+}
+#calculate--button:active {
+  transform: scale(0.8);
+}
+#calculate--button:hover + #calculate--button--overlay,
+#calculate--button:focus + #calculate--button--overlay {
+  transform: translateY(calc(-100% + 2px)) ;
+}
+#calculate--button--overlay {
+	background-color: #534e4a;
+	height: calc(100% + 2px);
+	width: 100%;
+	position: absolute;
+	bottom: calc(-100% - 2px);
+	left: 0;
+	z-index: -1;
+	transition: transform 300ms ease;
+}
+#calculate--button:active + #calculate--button--overlay {
+    transform: translateY(calc(-100% + 2px)) scale(0.8);
 }

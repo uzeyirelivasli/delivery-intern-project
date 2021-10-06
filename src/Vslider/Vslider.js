@@ -19,6 +19,7 @@ function Vslider() {
     verticalSwiping: true,
     infinite: true,
     autoplay: true,
+    pauseOnHover: false,
   };
   return (
     <Slider {...settings}>
