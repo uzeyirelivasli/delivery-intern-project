@@ -7,14 +7,24 @@ function Header() {
   useEffect(() => {
     const hamburger = document.querySelector(".hamburger");
     const body = document.querySelector("body");
-    const menu = document.querySelector('.menuToggle')
+    const menu = document.querySelector(".menuToggle");
     console.log(menu);
-    hamburger.addEventListener('click', () =>{
-      hamburger.classList.toggle('hamburger-active')
-        body.classList.toggle('hiddenBody')
-        menu.classList.toggle('active-menu')
-      
-    })
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("hamburger-active");
+      body.classList.toggle("hiddenBody");
+      menu.classList.toggle("active-menu");
+    });
+
+    function adapt() {
+      if (document.documentElement.clientWidth > 1220) {
+        // menu.style.display = "none";
+        menu.classList.remove("active-menu");
+        body.classList.remove("hiddenBody");
+        hamburger.classList.remove("hamburger-active");
+      }
+    }
+    window.onload = adapt;
+    window.onresize = adapt;
   });
 
   return (
@@ -81,25 +91,36 @@ function Header() {
         <span></span>
       </div>
 
-      <div className="menuToggle">
+      <section className="menuToggle">
         <ul id="menu">
-          <a href="#">
-            <li>Home</li>
-          </a>
-          <a href="#">
-            <li>About</li>
-          </a>
-          <a href="#">
-            <li>Info</li>
-          </a>
-          <a href="#">
-            <li>Contact</li>
-          </a>
-          <a href="https://erikterwan.com/" target="_blank">
-            <li>Show me more</li>
-          </a>
+          <div>
+            <input type="checkbox" id="collapseOne" />
+            <label for="collapseOne">Şirkət</label>
+
+            <li>Haqqımızda</li>
+            <li>Xəbərlər</li>
+            <li>Vakansiyalar</li>
+          </div>
+          <div>
+            <input type="checkbox" id="collapseTwo" />
+            <label for="collapseTwo">Xidmətlərimiz</label>
+
+            <li>Təkliflərimiz</li>
+            <li>Korporativ</li>
+            <li>Mağazalar</li>
+          </div>
+          <div>
+            <label for="collapse">Tariflər</label>
+          </div>
+          <div>
+            <input type="checkbox" id="collapseThree"/>
+            <label for="collapseThree">Əlaqə</label>
+
+            <li>Dəstək</li>
+            <li>Sual-Cavab</li>
+          </div>
         </ul>
-      </div>
+      </section>
     </header>
   );
 }
