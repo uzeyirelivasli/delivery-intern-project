@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Titles from "../Title/Title";
 import "./Reciepe.css";
 //
+import UsaFlag from "../Images/flags/en.svg";
+import TrFlag from "../Images/flags/tr.svg";
+import AzFlag from "../Images/flags/az.svg";
 
 function Reciepe() {
+  useEffect(() => {
+    const azn = document.querySelector("#currency--az");
+    const usd = document.querySelector("#currency--usd");
+    const tr = document.querySelector("#currency--tr");
+
+    // manat base currency 1 manat =>
+    const mBaseTr = 5.22;
+    const mBaseUsd = 0.59;
+
+    azn.addEventListener("change", () => {
+      tr.value = (azn.value * mBaseTr).toFixed(2);
+      usd.value = (azn.value * mBaseUsd).toFixed(2);
+    });
+
+    tr.addEventListener("change", () => {
+      azn.value = (tr.value / mBaseTr).toFixed(2);
+      usd.value = (azn.value * mBaseUsd).toFixed(2);
+    });
+
+    usd.addEventListener("change", () => {
+      azn.value = (usd.value / mBaseUsd).toFixed(2);
+      tr.value = (mBaseTr * azn.value).toFixed(2);
+    });
+  });
+
   return (
     <section className="reciepe">
       <Titles name="Kalkulyator" />
@@ -90,33 +118,33 @@ function Reciepe() {
       </div>
       <div className="converter">
         <h4>Konverter</h4>
-        <div className='converter--wrapper'>
-          <div className='converter__country--container' >
+        <div className="converter--wrapper">
+          <div className="converter__country--container">
             <h6>ABŞ</h6>
-            <div className='converter--container__input--container'>
+            <div className="converter--container__input--container">
               {/* abs bayraq */}
-              <img src="" alt="amerikadan kargo" />
-              <input type="number" placeholder='USD' />
+              <img src={UsaFlag} alt="amerika" />
+              <input type="number" placeholder="USD" id="currency--usd" />
             </div>
-            <div className='line'></div>
+            <div className="line"></div>
           </div>
-          <div className='converter__country--container' >
-            <h6>ABŞ</h6>
-            <div className='converter--container__input--container'>
-              {/* abs bayraq */}
-              <img src="" alt="amerikadan kargo" />
-              <input type="number" placeholder='USD' />
+          <div className="converter__country--container">
+            <h6>Türkiyə</h6>
+            <div className="converter--container__input--container">
+              {/* Turkiye bayraq */}
+              <img src={TrFlag} alt="turkiye" />
+              <input type="number" placeholder="TL" id="currency--tr" />
             </div>
-            <div className='line'></div>
+            <div className="line"></div>
           </div>
-          <div className='converter__country--container' >
-            <h6>ABŞ</h6>
-            <div className='converter--container__input--container'>
-              {/* abs bayraq */}
-              <img src="" alt="amerikadan kargo" />
-              <input type="number" placeholder='USD' />
+          <div className="converter__country--container">
+            <h6>Azərbaycan</h6>
+            <div className="converter--container__input--container">
+              {/* az bayraq */}
+              <img src={AzFlag} alt="azerbaycan" />
+              <input type="number" placeholder="AZN" id="currency--az" />
             </div>
-            <div className='line'></div>
+            <div className="line"></div>
           </div>
         </div>
       </div>

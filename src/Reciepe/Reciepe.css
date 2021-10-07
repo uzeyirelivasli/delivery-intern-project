@@ -67,14 +67,13 @@ input[type="number"] {
   margin: 30px auto;
   justify-content: space-between;
 }
-.calculate--button{
-    width: max-content;
-    position: relative;
-    overflow: hidden;
+.calculate--button {
+  width: max-content;
+  position: relative;
+  overflow: hidden;
 }
 
 #calculate--button {
-  
   padding: 16px 32px 13px;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid var(--second-color);
@@ -93,18 +92,57 @@ input[type="number"] {
 }
 #calculate--button:hover + #calculate--button--overlay,
 #calculate--button:focus + #calculate--button--overlay {
-  transform: translateY(calc(-100% + 2px)) ;
+  transform: translateY(calc(-100% + 2px));
 }
 #calculate--button--overlay {
-	background-color: #534e4a;
-	height: calc(100% + 2px);
-	width: 100%;
-	position: absolute;
-	bottom: calc(-100% - 2px);
-	left: 0;
-	z-index: -1;
-	transition: transform 300ms ease;
+  background-color: #534e4a;
+  height: calc(100% + 2px);
+  width: 100%;
+  position: absolute;
+  bottom: calc(-100% - 2px);
+  left: 0;
+  z-index: -1;
+  transition: transform 300ms ease;
 }
 #calculate--button:active + #calculate--button--overlay {
-    transform: translateY(calc(-100% + 2px)) scale(0.8);
+  transform: translateY(calc(-100% + 2px)) scale(0.8);
+}
+.converter h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.converter--wrapper,
+.converter--container__input--container {
+  display: flex;
+  text-align: center;
+}
+.converter--container__input--container{
+  justify-content: center;
+}
+.converter__country--container {
+  flex: 1;
+}
+.converter__country--container h6 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.converter__country--container input {
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 3px;
+  border: none;
+  outline: none;
+}
+ .line{
+  background: #534e4a;
+  height: 1px;
+  width: 50%;
+  margin: 0 auto;
+}
+.converter__country--container img{
+width: 38px;
+object-fit: contain;
+}
+.converter{
+  margin-bottom: 50px;
 }
