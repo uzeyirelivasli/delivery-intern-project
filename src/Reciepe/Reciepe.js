@@ -30,6 +30,42 @@ function Reciepe() {
       azn.value = (usd.value / mBaseUsd).toFixed(2);
       tr.value = (mBaseTr * azn.value).toFixed(2);
     });
+
+    // ---------------------- calculator
+    const calculateButton = document.querySelector("#calculate--button");
+
+    const calculateFunction = () => {
+      let weight = +document.querySelector("#weight").value;
+      let weightUnit = +document.querySelector("#weight--unit").value;
+
+      let width = +document.querySelector("#width").value;
+      let widthUnit = +document.querySelector("#width--unit").value;
+
+      let length = +document.querySelector("#length").value;
+      let lengthUnit = +document.querySelector("#length--unit").value;
+
+      let height = +document.querySelector("#height").value;
+      let heightUnit = +document.querySelector("#height--unit").value;
+
+      let result;
+
+      if (weight === 0) {
+        result = 0;
+        return result;
+      } else if (weightUnit === 1) {
+        weight *= 0.45;
+      }
+
+      if (width && length && height) {
+        widthUnit == 1 ? (width *= 2.54) : (width = width);
+        lengthUnit == 1 ? (length *= 2.54) : (length = length);
+        heightUnit == 1 ? (height *= 2.54) : (height = height);
+      }
+
+      console.log(width, length, height);
+    };
+
+    calculateButton.addEventListener("click", calculateFunction);
   });
 
   return (
@@ -53,9 +89,9 @@ function Reciepe() {
           <div className="row">
             <div className="reciepe__description--text">Çəki</div>
             <div className="half--select">
-              <input type="number" placeholder="Çəki" />
+              <input type="number" placeholder="Çəki" id="weight" />
               {/* Select */}
-              <select>
+              <select id="weight--unit">
                 <option selected value="0">
                   kg
                 </option>
@@ -66,9 +102,9 @@ function Reciepe() {
           <div className="row">
             <div className="reciepe__description--text">En</div>
             <div className="half--select">
-              <input type="number" placeholder="En" />
+              <input type="number" placeholder="En" id="width" />
               {/* Select */}
-              <select>
+              <select id="width--unit">
                 <option selected value="0">
                   sm
                 </option>
@@ -81,9 +117,9 @@ function Reciepe() {
           <div className="row">
             <div className="reciepe__description--text">Uzunluq</div>
             <div className="half--select">
-              <input type="number" placeholder="Uzunluq" />
+              <input type="number" placeholder="Uzunluq" id="length" />
               {/* Select */}
-              <select>
+              <select id="length--unit">
                 <option selected value="0">
                   sm
                 </option>
@@ -94,9 +130,9 @@ function Reciepe() {
           <div className="row">
             <div className="reciepe__description--text">Hündürlük</div>
             <div className="half--select">
-              <input type="number" placeholder="Hündürlük" />
+              <input type="number" placeholder="Hündürlük" id="height" />
               {/* Select */}
-              <select>
+              <select id="height--unit">
                 <option selected value="0">
                   sm
                 </option>

@@ -8,7 +8,6 @@ function Header() {
     const hamburger = document.querySelector(".hamburger");
     const body = document.querySelector("body");
     const menu = document.querySelector(".menuToggle");
-    console.log(menu);
     hamburger.addEventListener("click", () => {
       hamburger.classList.toggle("hamburger-active");
       body.classList.toggle("hiddenBody");

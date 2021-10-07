@@ -7,6 +7,7 @@
 
 
 
-converter finish the design and JAVASCRIPT CALCULATE LOGIC
+<!-- converter finish the design and -->
+JAVASCRIPT CALCULATE LOGIC
 
 prices component
