@@ -1,0 +1,41 @@
+.price {
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+  margin-right: 40px;
+  background: white;
+  text-align: center;
+  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.75);
+}
+.price__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.price__weight {
+  font-size: 42px;
+  color: var(--main-color);
+  background-color: rgba(13, 247, 239, 0.347);
+  padding: 20px;
+}
+.price__standart__title,.price__liquid__title{
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 24px;
+}
+.price__liquid__title{
+    color: var(--main-color);
+}
+.standart__price, .liquid__price{
+    font-size: 18px;
+    padding: 8px;
+    color: #333333;
+}
+.standart__price span, .liquid__price span{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 5px;
+}

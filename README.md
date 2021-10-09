@@ -5,9 +5,4 @@
 4. hamburger menu javascript optimize
 5. hamburger menu input css
 
-
-
-<!-- converter finish the design and -->
-JAVASCRIPT CALCULATE LOGIC
-
-prices component
+<!-- news component -->

@@ -57,9 +57,9 @@ function Reciepe() {
       }
 
       if (width && length && height) {
-        widthUnit == 1 ? (width *= 2.54) : (width = width);
-        lengthUnit == 1 ? (length *= 2.54) : (length = length);
-        heightUnit == 1 ? (height *= 2.54) : (height = height);
+        widthUnit === 1 ? (width *= 2.54) : (width = width);
+        lengthUnit === 1 ? (length *= 2.54) : (length = length);
+        heightUnit === 1 ? (height *= 2.54) : (height = height);
       }
 
       console.log(width, length, height);
