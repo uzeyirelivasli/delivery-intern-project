@@ -5,4 +5,4 @@
 4. hamburger menu javascript optimize
 5. hamburger menu input css
 
-<!-- news component -->
+<!-- stores owl carousel component -->

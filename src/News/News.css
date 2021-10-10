@@ -1,0 +1,26 @@
+.news{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.news__content{
+    display: flex;
+    margin: 50px 0;
+}
+.show--all--news{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: .2s;
+}
+.show--all--news:hover{
+    background-color: var(--main-color);
+}
+.show--all--news a{
+    color: white;
+    padding: 10px 15px;
+}

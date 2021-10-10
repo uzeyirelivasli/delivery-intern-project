@@ -1,0 +1,32 @@
+.the--new {
+  flex: 1;
+  margin-right: 20px;
+  padding: 10px;
+}
+.the--new__img:hover {
+  box-shadow: -2px -1px 19px 0px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: -2px -1px 19px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: -2px -1px 19px 0px rgba(0, 0, 0, 0.38);
+  transition: 0.4s;
+}
+.the--new h4 {
+  color: #333333;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+.the--new h5 {
+  color: gray;
+  font-weight: 300;
+}
+.the--new__img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  height: 240px;
+}
+.the--new__img img {
+  width: 100%;
+  object-fit: cover;
+}
