@@ -3,7 +3,8 @@
   src: url('./Fonts/Raleway-Medium.ttf');
 }
 :root {
-  --main-color: #5FCBF4;
+  --main-color: blue;
+  /* --main-color: #5FCBF4; */
   --second-color: #7000AC;
 }
 body{

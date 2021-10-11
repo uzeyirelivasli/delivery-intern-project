@@ -2,7 +2,6 @@
   border-radius: 12px;
   overflow: hidden;
   flex: 1;
-  margin-right: 40px;
   background: white;
   text-align: center;
   box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.75);
@@ -16,8 +15,8 @@
 }
 .price__weight {
   font-size: 42px;
-  color: var(--main-color);
-  background-color: rgba(13, 247, 239, 0.347);
+  color: #5FCBF4;
+  background-color: var(--main-color);
   padding: 20px;
 }
 .price__standart__title,.price__liquid__title{

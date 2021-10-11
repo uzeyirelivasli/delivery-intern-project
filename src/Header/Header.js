@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Header.css";
 //
-import Logo from "../Images/logo/blue_logo.png";
+import Logo from "../Images/logo/129225.svg";
 
 function Header() {
   useEffect(() => {

@@ -6,6 +6,7 @@ import Reciepe from "./Reciepe/Reciepe";
 import Vslider from "./Vslider/Vslider";
 import News from './News/News'
 import Carousel from "./Carousel/Carousel";
+import HowItWorks from './HowItWorks/HowItWorks'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Vslider />
       <Reciepe />
       <Prices />
+      <HowItWorks />
       <News />
       <Carousel />
     </div>

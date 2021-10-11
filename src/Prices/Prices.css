@@ -3,3 +3,6 @@
     width: 80%;
     margin: 100px auto 150px auto ;
 }
+.prices > .price:not(:last-child){
+    margin-right: 40px;
+}
