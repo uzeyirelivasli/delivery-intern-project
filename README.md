@@ -5,4 +5,7 @@
 4. hamburger menu javascript optimize
 5. hamburger menu input css
 
-<!-- stores owl carousel component -->
+<!-- how it works component -->
+<!-- Triangle formasinda et dizayni -->
+
+<!-- sonda responsive -->
