@@ -7,6 +7,7 @@ import Vslider from "./Vslider/Vslider";
 import News from './News/News'
 import Carousel from "./Carousel/Carousel";
 import HowItWorks from './HowItWorks/HowItWorks'
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <HowItWorks />
       <News />
       <Carousel />
+      <Footer />
     </div>
   );
 }
