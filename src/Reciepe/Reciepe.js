@@ -158,7 +158,6 @@ function Reciepe() {
           <div className="converter__country--container">
             <h6>ABŞ</h6>
             <div className="converter--container__input--container">
-              {/* abs bayraq */}
               <img src={UsaFlag} alt="amerika" />
               <input type="number" placeholder="USD" id="currency--usd" />
             </div>
@@ -167,7 +166,6 @@ function Reciepe() {
           <div className="converter__country--container">
             <h6>Türkiyə</h6>
             <div className="converter--container__input--container">
-              {/* Turkiye bayraq */}
               <img src={TrFlag} alt="turkiye" />
               <input type="number" placeholder="TL" id="currency--tr" />
             </div>
@@ -176,7 +174,6 @@ function Reciepe() {
           <div className="converter__country--container">
             <h6>Azərbaycan</h6>
             <div className="converter--container__input--container">
-              {/* az bayraq */}
               <img src={AzFlag} alt="azerbaycan" />
               <input type="number" placeholder="AZN" id="currency--az" />
             </div>

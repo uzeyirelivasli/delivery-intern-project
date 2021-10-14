@@ -21,9 +21,6 @@ footer > * > *:not(:last-child) {
   background-color: var(--main-color);
   width: 100px;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -34,4 +31,45 @@ footer > * > *:not(:last-child) {
 .footer__media div a {
   color: white;
   font-size: 28px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* media */
+@media screen and (max-width: 950px) {
+  footer ul:nth-child(3),
+  footer ul:nth-child(4) {
+    display: none;
+  }
+  footer {
+    display: flex;
+  }
+  .footer__media,
+  footer ul:last-child {
+    flex-direction: column;
+  }
+  .footer__media > div {
+    margin: 10px 0;
+    width: 35px;
+    height: 35px;
+    background: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  footer {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+  .footer__media {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

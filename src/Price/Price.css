@@ -38,3 +38,21 @@
     font-weight: bold;
     margin: 0 5px;
 }
+/* media */
+@media screen and (max-width: 1100px) {
+  .price{
+    margin: 20px auto;
+    width: 70%;
+    
+  }
+}
+@media screen and (max-width: 768px) {
+  .price{
+    width: 90%;    
+  }
+}
+@media screen and (max-width: 425px) {
+  .price{
+    width: 100%;    
+  }
+}

@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./Header.css";
 //
 import Logo from "../Images/logo/129225.svg";
+//
+import { FaUserAlt } from "react-icons/fa";
 
 function Header() {
   useEffect(() => {
@@ -83,11 +85,17 @@ function Header() {
         <a href="#">QEYDIYYAT</a>
       </div>
 
-      {/* mobile menu */}
-      <div className="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className='hamburger--and--options--container' >
+        <div className="mobile--header__options">
+          <FaUserAlt />
+        </div>
+
+        {/* mobile menu */}
+        <div className="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
       <section className="menuToggle">
@@ -112,7 +120,7 @@ function Header() {
             <label for="collapse">Tariflər</label>
           </div>
           <div>
-            <input type="checkbox" id="collapseThree"/>
+            <input type="checkbox" id="collapseThree" />
             <label for="collapseThree">Əlaqə</label>
 
             <li>Dəstək</li>

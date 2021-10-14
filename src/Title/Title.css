@@ -13,3 +13,9 @@
     opacity: .7;
     height: 4px;
 }
+@media screen and (max-width: 650px) {
+    .section--title{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

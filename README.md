@@ -5,7 +5,6 @@
 4. hamburger menu javascript optimize
 5. hamburger menu input css
 
-<!-- how it works component -->
-<!-- Triangle formasinda et dizayni -->
-
 <!-- sonda responsive -->
+
+<!-- sonra diger sehifeler -->

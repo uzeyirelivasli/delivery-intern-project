@@ -8,7 +8,7 @@
   --second-color: #7000AC;
 }
 body{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .hiddenBody{
   overflow: hidden;

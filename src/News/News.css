@@ -24,3 +24,16 @@
     color: white;
     padding: 10px 15px;
 }
+@media screen and (max-width: 1200px) {
+    .news__content{
+            flex-direction: column;
+    }    
+}
+@media screen and (max-width: 600px) {
+    .news{
+        width: 90%;
+    }
+    .show--all--news{
+        right: 5px;
+    }
+}

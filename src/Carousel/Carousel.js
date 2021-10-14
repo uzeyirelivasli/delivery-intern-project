@@ -19,9 +19,10 @@ import tenthStore from "../Images/store/store-10.png";
 function Carousel() {
 
     const responsive = {
-                    0: { items: 3 },
-                    700: { items: 3 },
-                    1000: { items: 7, dots: false }
+                    0: { items: 2 },
+                    550: { items: 3 },
+                    900: { items: 4 },
+                    1100: { items: 6}
     }
 
   return (
